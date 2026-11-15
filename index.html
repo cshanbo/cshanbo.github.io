@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shanbo Cheng | Seed Model, ByteDance</title>
+<meta name="description" content="Shanbo Cheng (程善伯) is a Senior Principal Engineer on the Seed Model team at ByteDance in Singapore. Research on multilingual models, simultaneous interpretation, and multimodal translation.">
+<link rel="canonical" href="https://cshanbo.github.io/">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+    <a class="skip" href="#main">Skip to content</a><div class="wrapper">
+<header aria-label="Researcher profile">
+ <div class="image avatar"><img src="assets/portrait.jpg" alt="Shanbo Cheng" width="144" height="144"></div>
+ <div class="identity">
+<h1>Shanbo Cheng</h1>
+<span class="cn" lang="zh-Hans">程善伯</span>
+ <p class="position">Senior Principal Engineer</p>
+ <a class="affiliation" href="https://seed.bytedance.com/en/">Seed Model, ByteDance</a><p class="location">Singapore</p>
+</div>
+ <div class="profile-links">
+<a href="https://scholar.google.com/citations?user=CYUBKN0AAAAJ&amp;hl=en">Google Scholar</a><span aria-hidden="true">·</span><a href="https://github.com/cshanbo">GitHub</a>
+ <a class="email" href="mailto:cshanbo@gmail.com">cshanbo@gmail.com</a>
+</div>
+</header><main id="main">
+  <section class="about" aria-labelledby="about-me"><h2 id="about-me">About me</h2>
+    <p>I’m a Senior Principal Engineer on the <a href="https://seed.bytedance.com/en/">Seed Model team at ByteDance</a> in Singapore. I build multilingual models for speech, text, and video. I’m particularly interested in what makes a translation faithful when context is incomplete. A live interpreter has to commit to words before a speaker finishes a sentence. A subtitle may only make sense once you see what the speaker is pointing at.</p>
+<p>I led <a href="#liveinterpret">Seed LiveInterpret 2.0</a> and <a href="#seed-x">Seed-X</a>. For LiveInterpret, we built a duplex model that listens and speaks at the same time, translating between English and Chinese while preserving the speaker’s voice. For Seed-X, we trained and released 7B-parameter models for translation across 28 languages. My recent work on <a href="#longdu">LongDu</a> asks how to tell whether a translation has preserved the details of an entire document.</p>
+<p>Before joining Seed Model, I led ByteDance’s <a href="https://byteresearchcla.github.io/">Cross Language Agent team</a>. Our <a href="https://translate.volcengine.com/">VolcTrans</a> platform provided machine translation for TikTok, CapCut, and Lark. Earlier, I led teams in the WMT news translation shared tasks. Our submissions achieved the top BLEU score for Chinese to English in <a href="#wmt17">2017</a>, all five directions we entered in <a href="#wmt18">2018</a>, and German to English in <a href="#wmt21">2021</a>.</p></section>
+  <section class="pubs-by-year" aria-labelledby="publications"><div class="pub-heading">
+<h2 id="publications">Publications</h2>
+<a href="https://scholar.google.com/citations?user=CYUBKN0AAAAJ&amp;hl=en">Full list on Google Scholar</a>
+</div>
+<h3 class="pub-year" id="year-2026">2026</h3>
+<ol class="pub-items" aria-labelledby="year-2026">
+<li id="longdu" class="pub-item with-figure">
+<div class="citation">
+<p class="venue">ACL</p>
+<h4><a href="https://aclanthology.org/2026.acl-long.1257/">Improving Long-Context Translation via Self-Supervised Dual Learning</a></h4>
+<p class="byline"><strong>Shanbo Cheng</strong>, Shuaijie She, Yu Bao, Jianbing Zhang, Jiajun Chen, Shujian Huang</p>
+<p class="finding">LongDu trains on monolingual documents. It favors translations that retain enough information to reconstruct the original document.</p>
+<p class="resources"><a href="https://aclanthology.org/2026.acl-long.1257.bib">BibTeX</a></p>
+</div>
+<img width="180" height="115" alt="LongDu back-translates a candidate document translation to evaluate reconstruction." src="assets/longdu.png">
+</li>
+<li id="grrm" class="pub-item"><div class="citation">
+<p class="venue">EMNLP</p>
+<h4><a href="https://aclanthology.org/2026.emnlp-main.2283/">GRRM: Group Relative Reward Modeling for Machine Translation</a></h4>
+<p class="byline">Sen Yang, <strong>Shanbo Cheng</strong>, Lu Xu, Jianbing Zhang, Shujian Huang</p>
+</div></li>
+<li id="dupo" class="pub-item"><div class="citation">
+<p class="venue">ICLR</p>
+<h4><a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/332aa4b65f636f7187982ae5bb16e50a-Abstract-Conference.html">DuPO: Enabling Reliable Self-Verification via Dual Preference Optimization</a></h4>
+<p class="byline">Shuaijie She, Yu Bao, Yu Lu, Lu Xu, Tao Li, Wenhao Zhu, Jianbing Zhang, Shujian Huang, <strong>Shanbo Cheng</strong>, Lu Lu, Yuxuan Wang</p>
+</div></li>
+</ol>
+<h3 class="pub-year" id="year-2025">2025</h3>
+<ol class="pub-items" aria-labelledby="year-2025">
+<li id="liveinterpret" class="pub-item with-figure">
+<div class="citation">
+<p class="venue">arXiv preprint</p>
+<h4><a href="https://arxiv.org/abs/2507.17527">Seed LiveInterpret 2.0: End-to-end Simultaneous Speech-to-speech Translation with Your Voice</a></h4>
+<p class="byline"><strong>Shanbo Cheng</strong>, Yu Bao, Zhichao Huang, Yu Lu, Ningxin Peng, Lu Xu, et al.</p>
+<p class="finding">A duplex model interprets between English and Chinese while preserving each speaker’s voice, with an average delay of about three seconds in our evaluation.</p>
+<p class="resources"><a href="https://seed.bytedance.com/en/seed_liveinterpret">Project</a></p>
+</div>
+<img width="180" height="115" alt="Overlapping English speech and Chinese interpretation with a short delay." src="assets/liveinterpret.png">
+</li>
+<li id="seed-x" class="pub-item with-figure">
+<div class="citation">
+<p class="venue">arXiv preprint</p>
+<h4><a href="https://arxiv.org/abs/2507.13618">Seed-X: Building Strong Multilingual Translation LLM with 7B Parameters</a></h4>
+<p class="byline"><strong>Shanbo Cheng</strong>, Yu Bao, Qian Cao, Luyang Huang, Liyan Kang, Zhicheng Liu, et al.</p>
+<p class="finding">A family of open-weight 7B models for translation across 28 languages, including instruction-tuned and reasoning variants.</p>
+<p class="resources"><a href="https://github.com/ByteDance-Seed/Seed-X-7B">Code &amp; models</a></p>
+</div>
+<img width="180" height="115" alt="Average COMET scores for Seed-X Instruct, DuPO and PPO are 89.05, 89.96 and 90.81, respectively (Table 4 of the report)." src="assets/seed-x.png">
+</li>
+<li id="speech-bt" class="pub-item"><div class="citation">
+<p class="venue">EMNLP</p>
+<h4><a href="https://aclanthology.org/2025.emnlp-main.629/">From Tens of Hours to Tens of Thousands: Scaling Back-Translation for Speech Recognition</a></h4>
+<p class="byline">Tianduo Wang, Lu Xu, Wei Lu, <strong>Shanbo Cheng</strong></p>
+</div></li>
+</ol>
+<h3 class="pub-year" id="year-2024">2024</h3>
+<ol class="pub-items" aria-labelledby="year-2024"><li id="clasi" class="pub-item with-figure">
+<div class="citation">
+<p class="venue">arXiv preprint</p>
+<h4><a href="https://arxiv.org/abs/2407.21646">Towards Achieving Human Parity on End-to-end Simultaneous Speech Translation via LLM Agent</a></h4>
+<p class="byline"><strong>Shanbo Cheng</strong>, Zhichao Huang, Tom Ko, Hang Li, Ningxin Peng, Lu Xu, Qini Zhang</p>
+<p class="finding">CLASI learns when to listen and when to translate. It retrieves domain terminology to interpret specialized speech.</p>
+<p class="resources"><a href="https://byteresearchcla.github.io/clasi/">Project</a><a href="https://github.com/byteresearchcla/RealSI">Benchmark</a></p>
+</div>
+<img width="180" height="115" alt="Streaming speech, memory and retrieved terms provide context to the CLASI translation agent." src="assets/clasi.png">
+</li></ol>
+<h3 class="pub-year" id="year-2023">2023</h3>
+<ol class="pub-items" aria-labelledby="year-2023"><li id="bigvideo" class="pub-item"><div class="citation">
+<p class="venue">Findings of ACL</p>
+<h4><a href="https://aclanthology.org/2023.findings-acl.535/">BigVideo: A Large-scale Video Subtitle Translation Dataset for Multimodal Machine Translation</a></h4>
+<p class="byline">Liyan Kang, Luyang Huang, Ningxin Peng, Peihao Zhu, Zewei Sun, <strong>Shanbo Cheng</strong>, Mingxuan Wang, Degen Huang, Jinsong Su</p>
+</div></li></ol>
+<h3 class="pub-year" id="year-2022">2022</h3>
+<ol class="pub-items" aria-labelledby="year-2022"><li id="switch-glat" class="pub-item"><div class="citation">
+<p class="venue">ICLR</p>
+<h4><a href="https://openreview.net/forum?id=5HvpvYd68b">switch-GLAT: Multilingual Parallel Machine Translation Via Code-Switch Decoder</a></h4>
+<p class="byline">Zhenqiao Song, Hao Zhou, Lihua Qian, Jingjing Xu, <strong>Shanbo Cheng</strong>, Mingxuan Wang, Lei Li</p>
+</div></li></ol>
+<h3 class="pub-year" id="year-2021">2021</h3>
+<ol class="pub-items" aria-labelledby="year-2021"><li id="wmt21" class="pub-item"><div class="citation">
+<p class="venue">WMT</p>
+<h4><a href="https://aclanthology.org/2021.wmt-1.17/">The Volctrans GLAT System: Non-autoregressive Translation Meets WMT21</a></h4>
+<p class="byline">Lihua Qian, Yi Zhou, Zaixiang Zheng, Yaoming Zhu, Zehui Lin, Jiangtao Feng, <strong>Shanbo Cheng</strong>, Lei Li, Mingxuan Wang, Hao Zhou</p>
+</div></li></ol>
+<h3 class="pub-year" id="year-2018">2018</h3>
+<ol class="pub-items" aria-labelledby="year-2018"><li id="wmt18" class="pub-item"><div class="citation">
+<p class="venue">WMT</p>
+<h4><a href="https://aclanthology.org/W18-6408/">Alibaba’s Neural Machine Translation Systems for WMT18</a></h4>
+<p class="byline">Yongchao Deng, <strong>Shanbo Cheng</strong>, Jun Lu, Kai Song, Jingang Wang, Shenglan Wu, Liang Yao, Guchun Zhang, Haibo Zhang, Pei Zhang, Changfeng Zhu, Boxing Chen</p>
+</div></li></ol>
+<h3 class="pub-year" id="year-2017">2017</h3>
+<ol class="pub-items" aria-labelledby="year-2017"><li id="wmt17" class="pub-item"><div class="citation">
+<p class="venue">WMT</p>
+<h4><a href="https://aclanthology.org/W17-4742.pdf">Sogou Neural Machine Translation Systems for WMT17</a></h4>
+<p class="byline">Yuguang Wang, Xiang Li, <strong>Shanbo Cheng</strong>, Liyang Jiang, Jiajun Yang, Wei Chen, Lin Shi, Yanfeng Wang, Hongtao Yang</p>
+</div></li></ol>
+<h3 class="pub-year" id="year-2016">2016</h3>
+<ol class="pub-items" aria-labelledby="year-2016"><li id="primt" class="pub-item"><div class="citation">
+<p class="venue">NAACL</p>
+<h4><a href="https://aclanthology.org/N16-1148/">PRIMT: A Pick-Revise Framework for Interactive Machine Translation</a></h4>
+<p class="byline"><strong>Shanbo Cheng</strong>, Shujian Huang, Huadong Chen, Xin-Yu Dai, Jiajun Chen</p>
+</div></li></ol></section><section class="block training" aria-labelledby="background"><div class="section-head"><h2 id="background">Education &amp; service</h2></div>
+   <p>I earned my M.Sc. in Computer Science and Technology at <a href="https://nlp.nju.edu.cn/people/chengsb/">Nanjing University</a>, where I studied interactive machine translation with Jiajun Chen and Shujian Huang.</p>
+   <p>I served as an area chair for IJCNLP-AACL 2023 and have reviewed for ACL, EMNLP, NAACL, AAAI, and NeurIPS.</p>
+  </section>
+  <footer>Adapted from <a href="https://github.com/yaoyao-liu/minimal-light">Minimal Light</a> by Yaoyao Liu.</footer>
+</main>
+</div>
+</body>
+</html>
